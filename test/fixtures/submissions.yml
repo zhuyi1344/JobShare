@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  company: MyString
+  start: 2014-09-19
+  end: 2014-09-19
+  exceed: false
+
+two:
+  company: MyString
+  start: 2014-09-19
+  end: 2014-09-19
+  exceed: false

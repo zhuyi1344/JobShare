@@ -1,0 +1,10 @@
+<tr>
+  <td>
+    <span class="None"> </span>
+  </td>
+  <td><%= link_to recruitment.company, '#' %></td>
+  <td><%= recruitment.day %></td>
+  <td><%= DateTime.parse(recruitment.start.to_s(:db)).strftime('%H:%M').to_s %>~<%= DateTime.parse(recruitment.start.to_s(:db)).strftime('%H:%M').to_s %>
+  </td>       
+  <td><%= recruitment.location %></td>      
+</tr>

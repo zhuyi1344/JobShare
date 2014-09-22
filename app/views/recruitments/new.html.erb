@@ -1,0 +1,26 @@
+<%= form_for @recruitment do |f| %>
+<div class="row">
+  <div class="span9 offset3">
+    <%= f.label '招聘公司:' %>
+    <%= f.text_field :company %>
+
+    <%= f.label '日期:' %>
+    <%= f.date_select :day %>
+
+    <%= f.label '开始时间:' %>
+    <%= f.time_select(:start, :ignore_date=>true) %>
+
+    <%= f.label '结束时间:' %>
+    <%= f.time_select(:end, :ignore_date=>true) %>
+
+    <%= f.label '宣讲地点:' %>
+    <%= f.text_field :location %>
+
+    <br>
+
+    <%= f.submit '分享宣讲信息', class:"btn btn-primary" %>
+
+    <% end %>
+    <%= link_to 'Back', recruitments_path %>
+  </div>
+</div>

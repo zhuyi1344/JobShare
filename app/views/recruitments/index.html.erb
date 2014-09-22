@@ -1,0 +1,28 @@
+<div class="container">
+<div class="share">
+  <%= link_to '分享宣讲信息', new_recruitment_path, class:"btn btn-primary" %>
+</div>
+<div class="row job-info">
+<table class = "table table-striped table-centered">
+  <thead>
+    <tr>
+      <th class="header-status"></th>
+      <th class="header-company">招聘公司</th>
+      <th class="header-date">宣讲日期</th>
+      <th class="header-time">起止时间</th>
+      <th class="header-location">宣讲地点</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render @recruitments %>
+  </tbody>
+</table>
+</div>
+
+<div class="center">
+<%= will_paginate @recruitments %>
+</div>
+
+
+
+

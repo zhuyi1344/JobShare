@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="share">
+   <%= link_to '分享网申信息', new_submission_path, class:"btn btn-primary" %>
+ </div>
+ <div class="row job-info">
+  <table class = "table table-striped table-centered">
+    <thead>
+      <tr>
+        <th class="header-status"></th>
+        <th class="header-company">招聘公司</th>
+        <th class="header-date">开始日期</th>
+        <th class="header-date">结束日期</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%= render @submissions %>
+    </tbody>
+  </table>
+
+</div>
+
+<div class="center">
+  <%= will_paginate @submissions %>
+</div>
+</div>

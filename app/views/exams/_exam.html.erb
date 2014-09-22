@@ -1,0 +1,11 @@
+<tr>
+  <td>
+    <span class="None"> </span>
+  </td>
+  <td><%= link_to exam.company, '#' %></td>
+  <td><%= exam.day %></td>
+  <td><%= DateTime.parse(exam.start.to_s(:db)).strftime('%H:%M').to_s %>~<%= DateTime.parse(exam.start.to_s(:db)).strftime('%H:%M').to_s %>
+    </td>      
+  <td><%= exam.location %></td>    
+</tr>
+

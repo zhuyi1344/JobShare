@@ -1,0 +1,24 @@
+<%= form_for @exam do |f| %>
+<div class="row">
+  <div class="span9 offset3">
+   
+    <%= f.label '招聘公司:' %>
+    <%= f.text_field :company %>
+
+    <%= f.label '笔试日期:' %>
+    <%= f.date_select :day %>
+
+    <%= f.label '开始时间:' %>
+    <%= f.time_select :start, :ignore_date => true %>
+
+    <%= f.label '结束时间:' %>
+    <%= f.time_select :end, :ignore_date => true %>
+
+    <%= f.label '笔试地点:' %>
+    <%= f.text_field :location %>
+    <br>
+    <%= f.submit '分享笔试信息', class:"btn btn-primary" %>
+    <% end %>
+    <%= link_to 'Back', exams_path %>
+  </div>
+</div>

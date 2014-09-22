@@ -1,0 +1,8 @@
+development:
+  adapter: mysql2
+  database: job
+  encoding: utf8
+  username: root
+  password:
+  host: localhost
+
