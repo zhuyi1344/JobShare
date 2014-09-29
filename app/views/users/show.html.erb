@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="span4 offset3">
+    <%= gravatar_for @user, size: 180 %>
+    <p><strong><%= @user.name %></strong></p>
+    <small><%= @user.email %></small>
+    <br>
+    <a href="http://gravatar.com/" target="_blank">Change your avatar at gravatar.com</a>
+  </div>
+</div>

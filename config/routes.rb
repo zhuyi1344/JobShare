@@ -1,5 +1,11 @@
 JobShare::Application.routes.draw do
+  resources :users
+  resources :sessions, only:[:new, :create, :destroy]
   root to: 'welcome#index'
+  match '/signup', to: 'users#new', via: 'get'
+  match '/signin', to: 'sessions#new', via: 'get'
+  match '/signout', to: 'sessions#destroy', via: 'delete'
+
   resources :submissions
   resources :recruitments
   resources :exams

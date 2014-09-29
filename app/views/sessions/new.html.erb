@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="span6 offset5">
+    <%= form_for(:session, url:sessions_path) do |f| %>
+    
+    <%= f.label '邮箱' %>
+    <%= f.text_field :email %>
+
+    <%= f.label '密码' %>
+    <%= f.password_field :password %>
+
+    <br>
+    <%= f.submit '登录', class:"btn btn-primary"%>
+
+  <% end %>
+  <p>新用户？<%= link_to '注册', signup_path %></p>
+  </div>
+</div>

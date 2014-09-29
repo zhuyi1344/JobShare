@@ -1,4 +1,6 @@
 class SubmissionsController < ApplicationController
+  before_action :signed_in_user, only:[:new, :create]
+
   def index
     @submissions = Submission.paginate(page: params[:page], per_page: 20)
   end
